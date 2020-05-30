@@ -2,6 +2,6 @@ FROM centos
 
 RUN yum install httpd -y
 
-COPY index.php   /var/www/html
+COPY index.html   /var/www/html
 
 CMD /usr/sbin/httpd -DFOREGROUND
