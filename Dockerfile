@@ -4,6 +4,6 @@ RUN yum install httpd -y
 
 COPY index.php   /var/www/html
 
-RUN sudo service /usr/sbin/httpd start -DFOREGROUND && /bin/bash
+RUN sudo service httpd start -DFOREGROUND && /bin/bash
 
-EXPOSE 8085
+EXPOSE 80
